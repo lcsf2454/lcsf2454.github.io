@@ -85,6 +85,9 @@ main h2{
 	color:red;
 }
 
+#specials img{
+	margin-left: 35%;
+}
 /* style rule for footer */
 footer p{
 	color: white;
