@@ -73,7 +73,7 @@ nav img {
 /* main style rules */
 main{
 	background-color: #29aaff;
-	font-size:1.25;
+	font-size:1.25em;
 	padding: 0.75em 1em;
 	margin:2em 0.75em;
 	box-shadow: 2px 2px 2px #000000;
