@@ -1,0 +1,160 @@
+/*
+Author: Owen Ramsey
+Date: November 1st
+File Name: team.css
+*/
+
+body, header, nav, main, footer, img, h1, h3, figure, figcaption, section, article, aside{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* style rules for body and imgage*/
+body{
+	background-color: #0B15A2;
+}
+
+img{
+	max-width: 100%;
+	display:block;
+}
+/*style rule for container */
+#container{
+	width: 100%;
+	margin: 0 auto;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/*style rule for header */
+header{
+	background-color:blue;
+	margin: 0.5em 2em;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #000000;
+	text-align:center;
+}
+
+/* style rule for navigation area */
+nav{
+	text-align: right;
+	padding: 0.5em;
+	background-color: #29aaff;
+	margin: 1em;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #000000;
+}
+
+nav ul {
+	list-style-type:none;
+	margin:0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5em;
+	
+}
+
+nav li a {
+	display: block;
+	color: black;
+	text-align:center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	
+}
+
+nav img {
+	padding: 0.5em 1em;
+}
+/* main style rules */
+main{
+	background-color: #29aaff;
+	text-align:center;
+	font-size:1.25em;
+	padding: 0.75em 1em;
+	margin:2em 0.75em;
+	box-shadow: 2px 2px 2px #000000;
+	
+}
+
+main h2{
+	color:#07155C;
+}
+.grid{
+	display: grid;
+	grid-gap: 20px;
+	
+}
+		
+	.pic-text{ 
+		font-size: 1em;
+		padding: 10px;
+}
+	
+aside{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #373684;
+	text-shadow: 3px 3px 10px #8280cb;
+	grid-column: 1 / span 2;
+}
+
+figure{
+	position: relative;
+	max-width: 275px;
+	margin: 2% auto;
+	border: 8px solid #373684;
+}
+
+figcaption{
+	position: absolute;
+	bottom: 0;
+	background: rgba(55, 54, 132, 0.7);
+	color: #fff;
+	width: 100%;
+	padding: 5% 0;
+	text-align: center;
+	font-family: Verdana, Arial, san-serif;
+	font-size: 1em;
+}
+
+article{
+	padding: 2%;
+}
+
+article h3{
+	text-align: center;
+}
+aside{ 
+	text-align: center;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: bold;
+	padding: 2%;
+	background-color: rgba(17, 70, 151, 0.5);
+	color: #fff;
+	box-shadow: 5px 5px 8px #000;
+	text-shadow: 5px 5px 5px #000;
+	border-radius: 0 15px;
+}
+	
+#specials img{
+	margin-left: 35%;
+}
+/* style rule for footer */
+footer p{
+	color: white;
+	font-size: 0.75em;
+	text-align: center;
+
+}
+
+footer p a{
+		color:white;
+		text-decoration:none;
+}
