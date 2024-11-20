@@ -1,0 +1,97 @@
+/*
+Author: Owen Ramsey
+Date: November 20th
+File Name: training.css
+*/
+body, header, nav, main, footer, img, h1, h3, table, th, td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* style rules for body and imgage*/
+body{
+	background-color: #0B15A2;
+}
+
+img{
+	max-width: 100%;
+	display:block;
+}
+/*style rule for container */
+#container{
+	width: 100%;
+	margin: 0 auto;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/*style rule for header */
+header{
+	background-color:blue;
+	margin: 0.5em 2em;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #000000;
+	text-align:center;
+}
+
+/* style rule for navigation area */
+nav{
+	text-align: right;
+	padding: 0.5em;
+	background-color: #29aaff;
+	margin: 1em;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #000000;
+}
+
+nav ul {
+	list-style-type:none;
+	margin:0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5em;
+	
+}
+
+nav li a {
+	display: block;
+	color: black;
+	text-align:center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	
+}
+
+nav img {
+	padding: 0.5em 1em;
+}
+/* main style rules */
+main{
+	background-color: #29aaff;
+	text-align:center;
+	font-size:1.25em;
+	padding: 0.75em 1em;
+	margin:2em 0.75em;
+	box-shadow: 2px 2px 2px #000000;
+	
+}
+
+
+
+
+/* style rule for footer */
+footer p{
+	color: white;
+	font-size: 0.75em;
+	text-align: center;
+
+}
+
+footer p a{
+		color:white;
+		text-decoration:none;
+}
