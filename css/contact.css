@@ -3,7 +3,7 @@ Author: Owen Ramsey
 Date: November 20th
 File Name: training.css
 */
-body, header, nav, main, footer, img, h1, h3, table, th, td{
+body, header, nav, main, footer, img, h1, h3, form, input, label, legend, textarea  {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -80,6 +80,59 @@ main{
 	
 }
 
+/*style rules for form */
+
+#form{
+	text-align: left;
+}
+form {
+	width: 70%;
+	margin: 0 auto;
+}
+
+span{
+	color: red;
+ }
+
+label, input, select {
+	display:block;
+	margin-bottom: 0.5em;
+}
+
+fieldset {
+	margin-bottom: 2em;
+	padding: 1em;
+}
+
+ input[type="checkbox"] {
+	margin-right: 0.5em;
+	display:inline;
+ }
+ 
+ input[type="radio"] {
+	margin-right: 0.5em;
+	display:inline;
+ }
+
+form #submit{
+	font-size: 1em;
+	padding: 0.5em;
+	margin-left: 1em;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: rgb(1, 255, 56);
+	display:inline;
+ }
+
+ form #reset{
+	font-size: 1em;
+	padding: 0.5em;
+	margin-left: 1em;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: rgb(242, 0, 16);
+	display:inline;
+ }
 
 
 

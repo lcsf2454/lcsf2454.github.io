@@ -37,9 +37,68 @@
   
   <!-- Use the main area to add the main content to the webpage -->
   <main>
+    <h2>Sign up for our mailing list</h2>
   <div id="form">
+    
     <form>
+      <!-- Form for user to join mailling list-->
+      <fieldset class="textbox"> 
+        <legend><span>*</span> Personal details</legend>
+            <label for="first_name">First Name </label>
+            <input id="first-name" size="20" name="first-name" type="text" placeholder="First name only" required>
+            
+            <label for="last_name">Last Name </label>
+            <input id="last_name" name="last_name" type="text" placeholder="Last name only" required> 
         
+          <label for="dob">Date of Birth </label>
+            <input id="dob" name="dob" type="date" placeholder="mm/dd/yyyy">
+        
+            <label for="email">Email </label>
+            <input id="email" name="email" type="email" placeholder="example@domain.com" autofocus required> 
+        
+            <label for="phone">Telephone </label>
+            <input id="phone" name="phone" type="tel" placeholder="Eg. 5195427751" required> 
+        
+      </fieldset>		    
+
+      <fieldset>
+        <legend>I would like more information about?</legend>
+          <input type="checkbox" name="mistmagic"  id="mistmagic"  value="mistmagic"  class="chkbx" /> Mistful Magic <br /> 
+          <input type="checkbox" name="products" id="products" value="products" class="chkbx" /> New Products <br />
+          <input type="checkbox" name="sales"    id="sales"    value="sales"    class="chkbx" /> Sales <br />
+      </fieldset>	
+        
+      <fieldset >
+        <legend> How often do you want emails? </legend>
+
+              <label for="weekly"><input type="radio" name="frequency"
+                 id="weekly" value="weekly" checked="checked"> Weekly</label>
+                 
+              <label for="monthly"><input type="radio" name="frequency"
+                id="monthly" value="monthly"> Monthly</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How did you hear about us? </legend>
+              <select name="reference" id="reference">
+                 <option value="--">--</option>
+                 <option value="ad">Advertisment</option>
+                 <option value="friend">Friend</option>
+                 <option value="google">Google</option>
+                 <option value="social">Social Media</option>
+                 <option value="social">Other</option>
+              </select>
+
+              <label for="questions"> Questions?</label>
+				<textarea id="questions" name="questions" rows="5" cols="35"> </textarea>
+      </fieldset>
+
+      <fieldset> 
+        <input type="submit" id="submit" value="Sign Up" class="btn">
+
+        <input type="reset" id="reset" value="Reset" class="btn">
+       
+        </fieldset> 
     </form>
   </div>
   </main>
