@@ -1,0 +1,50 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+
+      # setup node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # html VALIDATION
+      - name: Install HTML Validator
+        run: npm install -g html-validate
+
+      - name: Validate HTML files
+        run: |
+          find . -name "*.html" -print0 | xargs -0 -I{} html-validate {}
+
+      # css linting
+      - name: Install CSS Linter
+        run: npm install -g stylelint
+
+      - name: Lint CSS files
+        run: |
+          find . -name "*.css" -print0 | xargs -0 -I{} stylelint {}
+
+      # js linting
+      - name: Install ESLint
+        run: npm install -g eslint
+
+      - name: Lint JavaScript files
+        run: |
+          find . -name "*.js" -print0 | xargs -0 -I{} eslint --no-eslintrc {}
+
+      # docker build test
+      - name: Build Docker image
+        run: docker build -t my-static-site .
